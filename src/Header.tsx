@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-function Header({ children }) {
+interface Props {
+  children?: React.ReactNode;
+}
+
+function Header({ children }: Props) {
   return (
     <Wrapper>
       <Title>App Name</Title>
